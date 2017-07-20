@@ -1,5 +1,8 @@
 # Simple React Todo app
 
+This code is built through a tutorial session, you can find whole tutorial on the
+[link](https://kolosek.com/building-simple-react-app-part-1)
+
 1) Setup
 2) Start
 3) Usage
