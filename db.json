@@ -1,0 +1,39 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "task": "This is simple API test task",
+      "done": false
+    },
+    {
+      "id": 2,
+      "task": "This is simple API test task 2",
+      "done": false
+    },
+    {
+      "id": 3,
+      "task": "This is simple API test task 3",
+      "done": true
+    },
+    {
+      "task": "test",
+      "done": false,
+      "id": 5
+    },
+    {
+      "task": "Make this work!",
+      "done": true,
+      "id": 6
+    },
+    {
+      "task": "asdfasdfasdf",
+      "done": true,
+      "id": 7
+    },
+    {
+      "task": "asdfasd",
+      "done": true,
+      "id": 8
+    }
+  ]
+}

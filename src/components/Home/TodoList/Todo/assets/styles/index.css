@@ -1,0 +1,29 @@
+.todo-holder {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+  border: 1px dashed;
+  padding: 15px; }
+  .todo-holder.done {
+    background-color: #3a3a3a; }
+    .todo-holder.done .text {
+      text-decoration: line-through; }
+  .todo-holder .text {
+    flex: 7;
+    text-align: left;
+    margin: 0;
+    /* Maybe fix this differently - CENTERING text verticaly*/
+    display: flex;
+    align-items: center; }
+  .todo-holder .buttons {
+    flex: 3; }
+    .todo-holder .buttons .delete-button {
+      border: none;
+      padding: 0;
+      cursor: pointer; }
+    .todo-holder .buttons .done-button {
+      border: none;
+      padding: 0;
+      cursor: pointer; }
+    .todo-holder .buttons .control-image {
+      width: 24px; }

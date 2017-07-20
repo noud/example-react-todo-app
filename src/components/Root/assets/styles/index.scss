@@ -1,0 +1,39 @@
+@import '../../../common/styles/variables.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: $background-lighter;
+}
+
+.dark-input {
+  background-color: $background-lighter !important;
+  color: $white !important;
+
+
+  &::-webkit-input-placeholder {
+    color: $white-shadowed !important;
+  }
+  
+  &:-moz-placeholder { /* Firefox 18- */
+    color: $white-shadowed !important;  
+  }
+ 
+  &::-moz-placeholder {  /* Firefox 19+ */
+    color: $white-shadowed !important;  
+  }
+ 
+  &:-ms-input-placeholder {  
+    color: $white-shadowed !important;  
+  }
+}
+
+.dark-select {
+  background-color: $background-lighter !important;
+  color: $white !important;
+
+  option {
+    color: $white !important;
+  }
+}

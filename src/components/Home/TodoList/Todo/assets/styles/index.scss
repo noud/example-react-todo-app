@@ -1,0 +1,51 @@
+@import '../../../../../common/styles/variables.scss';
+
+.todo-holder {
+  display: flex;
+  flex-direction: row;
+
+  margin: 10px 0;
+
+  border: 1px dashed;
+  padding: 15px;
+
+  &.done {
+    background-color: $background-lighter;
+
+    .text {
+      text-decoration: line-through;
+    }
+  }
+
+  .text {
+    flex: 7;
+    text-align: left;
+    margin: 0;
+
+    /* Maybe fix this differently - CENTERING text verticaly*/
+    display: flex;
+    align-items: center;
+  }
+
+  .buttons {
+    flex: 3;
+
+    .delete-button {
+      border: none;
+      padding: 0;
+
+      cursor: pointer;
+    }
+
+    .done-button {
+      border: none;
+      padding: 0;
+
+      cursor: pointer;      
+    }
+
+    .control-image {
+      width: 24px;
+    }
+  }
+}

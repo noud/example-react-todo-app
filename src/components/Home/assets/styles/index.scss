@@ -1,0 +1,23 @@
+@import '../../../common/styles/variables.scss';
+
+.app-header {
+  background-color: $background-darker;
+  height: 72px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.main-content {
+  width: 70%;
+
+  margin: 2% auto;
+  padding: 5% 10%;
+  border-radius: 33px;
+  background-color: $background-darker;
+  color: $white;
+
+  -webkit-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+}
