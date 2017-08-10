@@ -36,6 +36,13 @@ Start the app
 npm start
 ```
 
+### Test
+
+To start unit tests just run
+```bash
+npm test
+```
+
 ### Usage
 
 Simple react application written as a tutorial material, you can create new todos,

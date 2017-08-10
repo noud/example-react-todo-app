@@ -49,7 +49,7 @@ class AddTodo extends Component {
           value={this.state.task}
           placeholder="Task text"
         />
-        {this.state.task ? <small class="form-text">Press enter to submit todo</small> : null}
+        {this.state.task ? <small className="form-text">Press enter to submit todo</small> : null}
       </div>
     );
   }

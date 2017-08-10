@@ -5,7 +5,7 @@ import './assets/styles/index.css';
 
 const NotFound = () => (
   <div className="centered-context">
-    <h1> Page not found </h1>
+    <h1>Page not found</h1>
   </div>
 );
 

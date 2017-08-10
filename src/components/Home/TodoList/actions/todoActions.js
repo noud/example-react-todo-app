@@ -22,7 +22,7 @@ export const setTodoDoneSuccess = (id: Number, done: Boolean) => ({
 export const setTodoDone = (todo: Object, done: Boolean) => dispatch => {
   dispatch(setTodoDoneStart());
 
-  fetch(`${API_URL}/todos/${todo.id}`, {
+  return fetch(`${API_URL}/todos/${todo.id}`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json'
@@ -52,7 +52,7 @@ export const deleteTodoSuccess = (id: Number) => ({
 export const deleteTodo = (id: Number) => dispatch => {
   dispatch(deleteTodoStart());
 
-  fetch(`${API_URL}/todos/${id}`, {
+  return fetch(`${API_URL}/todos/${id}`, {
     method: 'DELETE',
   })
     .then((response) => dispatch(deleteTodoSuccess(id)))
@@ -79,7 +79,7 @@ export const addTodoSuccess = (todo: Object) => ({
 export const addTodo = (task: String) => dispatch => {
   dispatch(addTodoStart());
 
-  fetch(`${API_URL}/todos`, { 
+  return fetch(`${API_URL}/todos`, { 
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -112,7 +112,7 @@ export const fetchTodosSuccess = (todos: Array) => ({
 export const fetchTodos = () => dispatch => {
   dispatch(fetchTodosStart());
 
-  fetch(`${API_URL}/todos`)
+  return fetch(`${API_URL}/todos`)
     .then((response) => response.json())
     .then((body) => dispatch(fetchTodosSuccess(body)))
     .catch((error) => dispatch(fetchTodosError(error)));

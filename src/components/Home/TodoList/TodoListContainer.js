@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
@@ -8,7 +9,20 @@ import { getVisibleTodos } from './reducers/todoSelectors';
 import TodoList from './TodoList';
 
 
-class TodoListContainer extends Component {
+export class TodoListContainer extends Component {
+
+  static propTypes = {
+    todos: PropTypes.arrayOf(PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      task: PropTypes.string.isRequired,
+      done: PropTypes.bool.isRequired
+    })).isRequired,
+    setTodoDone: PropTypes.func.isRequired,
+    deleteTodo: PropTypes.func.isRequired,
+    addTodo: PropTypes.func.isRequired,
+    changeFilter: PropTypes.func.isRequired,
+    fetchTodos: PropTypes.func.isRequired
+  };
 
   componentDidMount() {
     this.props.fetchTodos();

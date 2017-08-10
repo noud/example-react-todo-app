@@ -1,14 +1,11 @@
-import { Record } from 'immutable';
+import InitialState from './initialState';
 import * as types from '../constants';
 
-const TodoState = new Record({
-  todos: [],
-  filter: types.FILTER_ALL
-});
-
-const initialState = new TodoState();
+const initialState = new InitialState();
 
 const todoReducer = (state = initialState, action) => {
+  if (!(state instanceof InitialState)) state = initialState.mergeDeep(state);
+
   switch(action.type) {
     case types.SET_TODO_DONE_SUCCESS:
       return state.set('todos', state.todos.map((todo) => todo.id === action.payload.id ? { ...todo, done: action.payload.done } : todo));

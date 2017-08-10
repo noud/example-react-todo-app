@@ -9,7 +9,7 @@ class Home extends Component {
     return (
       <div>
         <div className="app-header">
-          <h2>ToDo App</h2>
+          <h1>ToDo App</h1>
         </div>
         <div className="main-content">
           <TodoList />
